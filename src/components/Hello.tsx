@@ -1,3 +1,4 @@
+//1st React Component
 import React from 'react';
 
 type HelloProps = {
