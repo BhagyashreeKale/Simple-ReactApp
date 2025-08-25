@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Hello React + TypeScript + Vite!</h1>
+      <h1>Hello, React + TypeScript</h1>
       <Hello name="Developer" />   {/* 👈 Using new component */}
       <p>Simple Counter Example</p>
       <h2>{count}</h2>
