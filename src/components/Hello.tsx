@@ -1,12 +1,16 @@
-//1st React Component
-import React from 'react';
+import React from "react";
 
 type HelloProps = {
-  name: string;
+  name?: string; // made optional
+  emoji?: string; // added new prop
 };
-//Sending Props
-const Hello: React.FC<HelloProps> = ({ name }) => {
-  return <h2>👋 Hello, {name}!</h2>;
+
+const Hello: React.FC<HelloProps> = ({ name = "Guest", emoji = "👋" }) => {
+  return (
+    <h2 style={{ color: "purple", fontFamily: "Arial, sans-serif" }}>
+      {emoji} Hello, {name}!
+    </h2>
+  );
 };
 
 export default Hello;
