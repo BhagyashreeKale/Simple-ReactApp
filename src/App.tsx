@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Hello from './components/Hello';
+import BasicForm from './components/BasicForm';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
       <h2>{count}</h2>
       <button onClick={() => setCount(count + 1)}>Increment</button>
       <button onClick={() => setCount(count - 1)}>Increment</button>
+      <BasicForm/>
     </div>
   );
 }
